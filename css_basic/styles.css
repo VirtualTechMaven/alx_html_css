@@ -1,1 +1,40 @@
+/* Layout with Flexbox */
+
+/* Body contains header, main, footer → stacked vertically */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* full screen height */
+}
+
+/* Main contains article + aside → side by side */
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto; /* allow main to expand automatically */
+}
+
+/* Article takes 2/3 of width */
+article {
+  flex: 2;
+  padding: 1rem;
+  overflow-y: auto; /* scroll if content is tall */
+  background: #ffffff;
+  border-right: 1px solid #ddd;
+}
+
+/* Aside takes 1/3 of width */
+aside {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  background: #f0f0f0;
+}
+
+/* Header + Footer basic styling */
+header, footer {
+  padding: 1rem;
+  background: #0366d6;
+  color: white;
+}
 /* Custom styles go here */
