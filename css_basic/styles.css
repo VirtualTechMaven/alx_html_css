@@ -37,7 +37,8 @@ header, footer {
   background: #0366d6;
   color: white;
 }
-/* /* Goals section styling (non-positioning only) */
+
+/* Goals section styling (non-positioning only) */
 article .goals {
   margin-top: 1rem;
   padding: 1rem;
@@ -58,4 +59,41 @@ article .goals ul {
   padding-left: 1.1rem;
   line-height: 1.6;
 }
-Custom styles go here */
+
+/* About Me section with image + text */
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 1rem;
+}
+
+.about-text {
+  flex: 2;
+}
+
+.about-image img {
+  max-width: 200px;
+  border-radius: 50%; /* makes the picture a circle */
+  object-fit: cover;  /* ensures neat fit */
+  border: 3px solid #0366d6; /* optional: blue border for style */
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  /* Stack article and aside vertically on small screens */
+  main {
+    flex-direction: column;
+  }
+
+  /* Stack about text and image vertically */
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    max-width: 150px;
+  }
+}
+
