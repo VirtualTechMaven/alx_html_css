@@ -1,0 +1,66 @@
+/* ===== WHAT WE DO SECTION ===== */
+.what-we-do {
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.what-we-do h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.what-we-do p {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.service {
+  flex: 1 1 calc(25% - 30px);
+  min-width: 200px;
+  padding: 20px;
+}
+
+.service span {
+  font-size: 3rem;
+  color: var(--primary-color);
+  display: block;
+  margin-bottom: 15px;
+}
+
+.service h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.service p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* ===== RESPONSIVE (MOBILE ≤480px) ===== */
+@media (max-width: 480px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service {
+    max-width: 300px;
+  }
+
+  .what-we-do h2 {
+    font-size: 1.8rem;
+  }
+}
